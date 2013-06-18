@@ -339,17 +339,21 @@ NSInteger secondsInteger;
 
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner{
-_bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 650, 0, 0)];
+//_bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 650, 0, 0)];
+    _bannerView.frame = CGRectMake(125, 650, 0, 0);
 
 }
 
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
-_bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 900, 0, 0)];
+_bannerView.frame = CGRectMake(125, -200, 0, 0);
 }
 
 
-- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave{}
+- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave{
+
+    return YES;
+}
 
 
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner{}
@@ -483,14 +487,60 @@ _bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 900, 0, 0)];
     }
     return;
                     }
+-(void) mode{
+    NSDate *now = [NSDate date];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"hh:mm";
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    NSString * intermediate = [NSDateFormatter localizedStringFromDate:now dateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterShortStyle];
+    
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:now];
+    NSInteger hour = [components hour];
+    NSInteger minute = [components minute];
+    NSLog(@"%ld hours and %ld minutes",(long)hour,(long)minute);
+    
+    if (hour > 9) {
+        [timerLabelMinutes setText:[NSString
+                                    stringWithFormat:@"%d",hour]];
+    }
+    else {
+        [timerLabelMinutes setText:[NSString
+                                    stringWithFormat:@"%d%d",0,hour]];
+    }
+    if (minute >9) {
+        [timerLabelSeconds setText:[NSString
+                                    stringWithFormat:@"%d",minute]];
+    }
+    else {
+        [timerLabelSeconds setText:[NSString
+                                    stringWithFormat:@"%d%d",0,minute]];
+    }
+    
+    
+ 
+    //[dateFormatter release];
+    
+}
 
 -(void) addMin {
     [playSound setCurrentTime:00];
     [playSound play];
     int infoM = [timerLabelMinutes.text intValue];
     int minutesPlus = infoM + 1;
-    [timerLabelMinutes setText:[NSString
-                                stringWithFormat:@"%d",minutesPlus,]];
+    if (infoM >8) {
+        [timerLabelMinutes setText:[NSString
+                                    stringWithFormat:@"%d",minutesPlus]];
+    }
+    else{
+        [timerLabelMinutes setText:[NSString
+                                        stringWithFormat:@"%d%d",0,minutesPlus]];
+        
+        
+    }
+
 
    
 }
@@ -537,7 +587,11 @@ _bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 900, 0, 0)];
     if ((secondsValue == 0)&&(minutesValue > 0)) {
         [timerLabelMinutes setText:[NSString stringWithFormat:@"%d%d",0,minutesValueOnes]];
         [timerLabelSeconds setText:[NSString stringWithFormat:@"%d%d",5,9]];
-    } 
+    }
+    if ((minutesValue >=11)&&(secondsValue == 0)) {
+        [timerLabelMinutes setText:[NSString stringWithFormat:@"%d",minutesValueOnes]];
+        [timerLabelSeconds setText:[NSString stringWithFormat:@"%d%d",5,9]];
+    }
     
     if ((secondsValue == 1) && (minutesValue == 0) ){
         [playSoundTwo setCurrentTime:00];
@@ -571,10 +625,10 @@ _bannerView= [[ADBannerView alloc] initWithFrame:CGRectMake(125, 900, 0, 0)];
         
     }
     
-    if (minutesValue >10) {
-        [timerLabelMinutes setText:[NSString stringWithFormat:@"%d", minutesValueOnes]];
-        
-    }
+//    if (minutesValue >10) {
+//        [timerLabelMinutes setText:[NSString stringWithFormat:@"%d", minutesValueOnes]];
+//        
+//    }
     NSLog(@"%d minutes and %d seconds",timerLabelMinutes.text.integerValue,timerLabelSeconds.text.integerValue);
     if ((timerLabelMinutes.text.integerValue == 0) && (timerLabelSeconds.text.integerValue == 0))
         
