@@ -66,9 +66,9 @@ NSInteger secondsInteger;
     
     
     endAnimation = [NSArray arrayWithObjects:
-                    [UIImage imageNamed:@"explode0001.png"],
-                    [UIImage imageNamed:@"explode0002.png"],
-                    [UIImage imageNamed:@"explode0003.png"],
+                    [UIImage imageNamed:@"explode0001"],
+                    [UIImage imageNamed:@"explode0002"],
+                    [UIImage imageNamed:@"explode0003"],
                     [UIImage imageNamed:@"explode0004.png"],
                     [UIImage imageNamed:@"explode0005.png"],
                     [UIImage imageNamed:@"explode0006.png"],
@@ -493,7 +493,7 @@ _bannerView.frame = CGRectMake(125, -200, 0, 0);
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"hh:mm";
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
-    NSString * intermediate = [NSDateFormatter localizedStringFromDate:now dateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterShortStyle];
+   // NSString * intermediate = [NSDateFormatter localizedStringFromDate:now dateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterShortStyle];
     
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
