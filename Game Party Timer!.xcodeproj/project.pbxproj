@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F022A43174E81DB00CBD55E /* Herculanum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE926E174A90EA00708DF7 /* Herculanum.ttf */; };
-		3F5477E2176A3B9100BC20F7 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F5477E1176A3B9100BC20F7 /* beep.mp3 */; };
 		3F6446831768BBA0008FF9AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6446821768BBA0008FF9AF /* AVFoundation.framework */; };
-		3F64468B1768C66B008FF9AF /* Dings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F64468A1768C66B008FF9AF /* Dings.mp3 */; };
-		3F64468D1768CA93008FF9AF /* DingDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F64468C1768CA93008FF9AF /* DingDone.mp3 */; };
 		3F9EAF7B174A6692006CAD17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9EAF7A174A6692006CAD17 /* UIKit.framework */; };
 		3F9EAF7D174A6692006CAD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9EAF7C174A6692006CAD17 /* Foundation.framework */; };
 		3F9EAF7F174A6692006CAD17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9EAF7E174A6692006CAD17 /* CoreGraphics.framework */; };
@@ -128,13 +125,13 @@
 		3FE156D3178C634D00D7B4A6 /* state 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156C3178C634D00D7B4A6 /* state 2@2x.png */; };
 		3FE156D4178C634D00D7B4A6 /* Stop-Clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156C4178C634D00D7B4A6 /* Stop-Clear@2x.png */; };
 		3FE156D5178C634D00D7B4A6 /* Timer-CLock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156C5178C634D00D7B4A6 /* Timer-CLock@2x.png */; };
+		3FE156D9178C667900D7B4A6 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156D6178C667900D7B4A6 /* beep.mp3 */; };
+		3FE156DA178C667900D7B4A6 /* DingDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156D7178C667900D7B4A6 /* DingDone.mp3 */; };
+		3FE156DB178C667900D7B4A6 /* Dings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FE156D8178C667900D7B4A6 /* Dings.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F5477E1176A3B9100BC20F7 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = ../../../beep.mp3; sourceTree = "<group>"; };
 		3F6446821768BBA0008FF9AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3F64468A1768C66B008FF9AF /* Dings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dings.mp3; path = ../../../Dings.mp3; sourceTree = "<group>"; };
-		3F64468C1768CA93008FF9AF /* DingDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = DingDone.mp3; path = ../../../DingDone.mp3; sourceTree = "<group>"; };
 		3F9EAF77174A6692006CAD17 /* Game Party Timer!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Party Timer!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9EAF7A174A6692006CAD17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F9EAF7C174A6692006CAD17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -257,6 +254,9 @@
 		3FE156C3178C634D00D7B4A6 /* state 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state 2@2x.png"; sourceTree = "<group>"; };
 		3FE156C4178C634D00D7B4A6 /* Stop-Clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop-Clear@2x.png"; sourceTree = "<group>"; };
 		3FE156C5178C634D00D7B4A6 /* Timer-CLock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timer-CLock@2x.png"; sourceTree = "<group>"; };
+		3FE156D6178C667900D7B4A6 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		3FE156D7178C667900D7B4A6 /* DingDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DingDone.mp3; sourceTree = "<group>"; };
+		3FE156D8178C667900D7B4A6 /* Dings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dings.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,7 +344,6 @@
 				3FE1563F178C62B200D7B4A6 /* cook0011@2x.png */,
 				3FE15640178C62B200D7B4A6 /* cook0012.png */,
 				3FE15641178C62B200D7B4A6 /* cook0012@2x.png */,
-				3F64468C1768CA93008FF9AF /* DingDone.mp3 */,
 				3FE1565A178C631100D7B4A6 /* explode0001.png */,
 				3FE1565B178C631100D7B4A6 /* explode0001@2x.png */,
 				3FE1565C178C631100D7B4A6 /* explode0002.png */,
@@ -398,6 +397,9 @@
 				3FE156BA178C634D00D7B4A6 /* 4@2x.png */,
 				3FE156BB178C634D00D7B4A6 /* 5@2x.png */,
 				3FE156BC178C634D00D7B4A6 /* 6@2x.png */,
+				3FE156D6178C667900D7B4A6 /* beep.mp3 */,
+				3FE156D7178C667900D7B4A6 /* DingDone.mp3 */,
+				3FE156D8178C667900D7B4A6 /* Dings.mp3 */,
 				3FE156BD178C634D00D7B4A6 /* 7@2x.png */,
 				3FE156BE178C634D00D7B4A6 /* 8@2x.png */,
 				3FE156BF178C634D00D7B4A6 /* 9@2x.png */,
@@ -407,8 +409,6 @@
 				3FE156C3178C634D00D7B4A6 /* state 2@2x.png */,
 				3FE156C4178C634D00D7B4A6 /* Stop-Clear@2x.png */,
 				3FE156C5178C634D00D7B4A6 /* Timer-CLock@2x.png */,
-				3F5477E1176A3B9100BC20F7 /* beep.mp3 */,
-				3F64468A1768C66B008FF9AF /* Dings.mp3 */,
 				3FD3C8E41757B15900AF66E1 /* 0.png */,
 				3FD3C8E51757B15A00AF66E1 /* Quick-Min.png */,
 				3FD3C8E61757B15A00AF66E1 /* Stop-Clear.png */,
@@ -514,9 +514,6 @@
 				3FD3C8E91757B15A00AF66E1 /* Quick-Min.png in Resources */,
 				3FD3C8EA1757B15A00AF66E1 /* Stop-Clear.png in Resources */,
 				3FD3C8EB1757B15A00AF66E1 /* Timer-CLock.png in Resources */,
-				3F64468B1768C66B008FF9AF /* Dings.mp3 in Resources */,
-				3F64468D1768CA93008FF9AF /* DingDone.mp3 in Resources */,
-				3F5477E2176A3B9100BC20F7 /* beep.mp3 in Resources */,
 				3FE15642178C62B300D7B4A6 /* cook0001.png in Resources */,
 				3FE15643178C62B300D7B4A6 /* cook0001@2x.png in Resources */,
 				3FE15644178C62B300D7B4A6 /* cook0002.png in Resources */,
@@ -603,6 +600,9 @@
 				3FE156D3178C634D00D7B4A6 /* state 2@2x.png in Resources */,
 				3FE156D4178C634D00D7B4A6 /* Stop-Clear@2x.png in Resources */,
 				3FE156D5178C634D00D7B4A6 /* Timer-CLock@2x.png in Resources */,
+				3FE156D9178C667900D7B4A6 /* beep.mp3 in Resources */,
+				3FE156DA178C667900D7B4A6 /* DingDone.mp3 in Resources */,
+				3FE156DB178C667900D7B4A6 /* Dings.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
